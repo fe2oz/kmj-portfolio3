@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+ul, li, ol{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+*{
+    margin:0; padding:0;
+}
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin:0; padding:0;
+    overflow-x: hidden;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+#slider{
+    width: 100%; height: 100vh;
+    background-image:url(../img/intro.png);
+    background-size: cover;
+}
+
+.section{
+    width: 100%; height: 100vh;
+}
+
+header{
+    width: 100%; height: 100%;
+}
+
+#open-menu{
+    width: 2.5vw;
+    position:fixed; right: 1%; top: 2%; z-index:10;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#overlay{
+    margin:0; padding:0;
+
+    #overlay-min{
+        width: 100%; height: 100vh;
+        display: flex; flex-flow:column; align-items: center; justify-content: center;
+        opacity:0;
+        position:fixed; top: -100%; z-index:9999;
+        background-image: url(../img/menu.png);
+        background-size:cover;
+
+        li{
+            padding:0.5%;
+            a{
+                font-size: 2.5vw; font-weight: bold;
+                color: #fff;
+                position:relative;
+                &:after{
+                    content: "";
+                    width: 0; height: 5em;
+                    position:absolute; left:0; bottom:0;
+                    display:inline-block;
+                    border-bottom: 3px solid #fff;
+                    transition: .35s ease-in-out;
+                }
+                &:hover:after{
+                    width: 100%;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
