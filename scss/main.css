@@ -12,10 +12,6 @@ a {
   padding: 0;
 }
 
-* div {
-  cursor: default;
-}
-
 @font-face {
   font-family: 'Cafe24SsurroundAir';
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
@@ -30,15 +26,16 @@ body {
   font-family: 'Cafe24SsurroundAir';
 }
 
-:root {
-  --font-section-padding: 80px;
-}
-
 #slider {
   width: 100%;
   height: 100vh;
   background-image: url(../img/intro.png);
   background-size: cover;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
 }
 
 header {
@@ -115,58 +112,4 @@ header {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-
-.section {
-  width: 100%;
-  height: auto;
-}
-
-.section-one {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-.section-one-h1 {
-  width: 100%;
-  padding-top: var(--font-section-padding);
-}
-
-.section-one-h1 h1 {
-  font-size: 5vw;
-}
-
-.section-one-h1 p {
-  font-size: 1.2vw;
-}
-
-.section-one-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: var(--font-section-padding);
-}
-
-.section-one-about-profile, .section-one-about-history, .section-one-about-license {
-  font-size: 1vw;
-}
-
-.section-one-about-profile h1, .section-one-about-history h1, .section-one-about-license h1 {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  border-bottom: 6px solid #000;
-}
-
-.section-one-about-profile p, .section-one-about-history p, .section-one-about-license p {
-  padding-bottom: 5px;
-}
+/*# sourceMappingURL=main.css.map */
