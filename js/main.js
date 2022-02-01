@@ -1,6 +1,3 @@
-window.onload = () => {
-
-}
 
 $(document).ready(function(){ //////메뉴 
     var timeline = new TimelineMax();
@@ -25,3 +22,13 @@ $(document).ready(function(){ //////메뉴
         });
 });
 
+$(document).ready(function(){
+    gsap.to(".section-one-h1", {
+        scrollTrigger: {
+            trigger: "section-one-h1",
+            scrub: true,
+            y: -100
+        },
+        y: 100
+    }) 
+})
