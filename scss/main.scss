@@ -9,6 +9,11 @@ a{
 }
 *{
     margin:0; padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --font-left-padding: 80px;
+    --font-top-padding: 40px;
 }
 @font-face {
     font-family: 'Cafe24SsurroundAir';
@@ -20,16 +25,6 @@ body{
     margin:0; padding:0;
     overflow-x: hidden;
     font-family: 'Cafe24SsurroundAir';
-}
-
-#slider{
-    width: 100%; height: 100vh;
-    background-image:url(../img/intro.png);
-    background-size: cover;
-}
-
-.section{
-    width: 100%; height: 100vh;
 }
 
 header{
@@ -73,6 +68,25 @@ header{
                     transform: scale(1);
                 }
             }
+        }
+    }
+}
+
+#slider{
+    width: 100%; height: 100vh;
+    background-image:url(../img/intro.png);
+    background-size: cover;
+}
+
+.section{
+    width: 100%; height: 200vh;
+    position:relative; top:0;
+
+    &-one{
+        padding-left: var(--font-left-padding); 
+        padding-top: var(--font-top-padding);
+        h1{
+            font-size: 7vw;
         }
     }
 }
