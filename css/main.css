@@ -19,7 +19,7 @@ a {
   --font-top-padding: 40px;
 }
 
-* div {
+:root div {
   cursor: default;
 }
 
@@ -30,11 +30,25 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MinSans-Medium';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Cafe24SsurroundAir';
+  font-family: 'MinSans-Medium';
 }
 
 :root {
@@ -132,26 +146,12 @@ header {
 
 .section {
   width: 100%;
-  height: 200vh;
-  position: relative;
-  top: 0;
-}
-
-.section-one {
-  padding-left: var(--font-left-padding);
-  padding-top: var(--font-top-padding);
-}
-
-.section-one h1 {
-  font-size: 7vw;
-}
-.section {
-  width: 100%;
   height: auto;
+  padding-top: var(--font-section-padding);
 }
 
 .section-one {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   display: -webkit-box;
@@ -163,39 +163,107 @@ header {
           flex-flow: column;
 }
 
-.section-one-h1 {
+.section-one-show1, .section-one-show2 {
   width: 100%;
-  padding-top: var(--font-section-padding);
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section-one-h1 h1 {
-  font-size: 5vw;
+.section-one-show1 h1, .section-one-show2 h1 {
+  font-size: 10vw;
 }
 
-.section-one-h1 p {
-  font-size: 1.2vw;
+.section-one-show1 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: var(--font-section-padding);
+  border-bottom: 5px solid #000;
+}
+
+.section-one-show2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: var(--font-section-padding);
+  -webkit-text-stroke: 1px black;
+  color: rgba(0, 0, 0, 0);
 }
 
 .section-one-about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: var(--font-section-padding);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section-one-about-profile, .section-one-about-history, .section-one-about-license {
-  font-size: 1vw;
+.section-one-about-1 {
+  width: 57%;
+  height: 110vh;
+  font-size: 7vw;
+  background-color: #9e99c7;
+  padding-left: var(--font-section-padding);
 }
 
-.section-one-about-profile h1, .section-one-about-history h1, .section-one-about-license h1 {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  border-bottom: 6px solid #000;
+.section-one-about-1 h1 {
+  -webkit-text-stroke: 1px #fff;
+  color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, white), color-stop(50.1%, transparent));
+  background-image: linear-gradient(90deg, white 0%, white 50%, transparent 50.1%);
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+  transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
 }
 
-.section-one-about-profile p, .section-one-about-history p, .section-one-about-license p {
-  padding-bottom: 5px;
+.section-one-about-1 h1:hover {
+  background-size: 200% 100%;
+}
+
+.section-one-about-2 {
+  width: 43%;
+  height: 110vh;
+}
+
+.section-one-about-2-profile {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-one-about-2-profile p {
+  font-size: 2vw;
+  font-family: 'Pretendard-Regular';
+}
+
+.section-one-about-2-profile p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.section-one-about-2-profile img {
+  width: 20vw;
+}
+
+.section-one-about-2-history {
+  width: 100%;
+  height: 100%;
+  background-color: orangered;
+  display: none;
+}
+
+.section-one-about-2-license {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  display: none;
 }

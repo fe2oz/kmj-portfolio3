@@ -22,13 +22,22 @@ $(document).ready(function(){ //////메뉴
         });
 });
 
-$(document).ready(function(){
-    gsap.to(".section-one-h1", {
-        scrollTrigger: {
-            trigger: "section-one-h1",
-            scrub: true,
-            y: -100
-        },
-        y: 100
-    }) 
-})
+$(function(){
+    $("#profile").mouseover(function(){
+        $(".section-one-about-2-profile").css("display", "flex");
+        $(".section-one-about-2-history").css("display", "none");
+        $(".section-one-about-2-license").css("display", "none");
+    });
+
+    $("#history").mouseover(function(){
+        $(".section-one-about-2-history").css("display", "flex");
+        $(".section-one-about-2-profile").css("display", "none");
+        $(".section-one-about-2-license").css("display", "none");
+    });
+
+    $("#license").mouseover(function(){
+        $(".section-one-about-2-license").css("display", "flex");
+        $(".section-one-about-2-profile").css("display", "none");
+        $(".section-one-about-2-history").css("display", "none");
+    });
+});
