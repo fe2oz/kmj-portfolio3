@@ -20,6 +20,71 @@ $(document).ready(function(){ //////메뉴
         $(document).on("click", "a", function () {
             timeline.reverse();
         });
+
+
+    var options = {
+    responsive: false
+  };
+  new Chart($("#canvas1"), {
+    type: 'doughnut',
+    tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+    data: {
+    labels: [
+      "1. html",
+      "2. css",
+      "3. scss",
+      "4. javascript"
+    ],
+    datasets: [{
+    data: [90, 90, 65, 60],
+    backgroundColor: [
+      "orange",
+      "skyblue",
+      "pink",
+      "yellow"
+    ],
+    hoverBackgroundColor: [
+      "#f97338",
+      "#5381d6",
+      "#ff3ab3",
+      "#ced37e"
+    ]
+    }]
+  },
+    options: { responsive: false }
+  }); 
+
+  var options = {
+    responsive: false
+  };
+  new Chart($("#canvas2"), {
+    type: 'doughnut',
+    tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+    data: {
+    labels: [
+      "photoshop",
+      "illustrator",
+      "3d blender",
+      "javascript"
+    ],
+    datasets: [{
+    data: [90, 90, 75, 60],
+    backgroundColor: [
+      "orange",
+      "skyblue",
+      "pink",
+      "yellow"
+    ],
+    hoverBackgroundColor: [
+      "#f97338",
+      "#5381d6",
+      "#ff3ab3",
+      "#ced37e"
+    ]
+    }]
+  },
+    options: { responsive: false }
+  }); 
 });
 
 $(function(){
