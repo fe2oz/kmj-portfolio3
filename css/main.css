@@ -272,15 +272,87 @@ header {
   background-image: url(../img/skils2.png);
   background-size: cover;
 }
-.section-two-skils, .section-two-skils1 {
+.section-two-skils {
   width: 100%;
   height: auto;
   padding-top: var(--font-section-padding);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
 }
-.section-two-skils p, .section-two-skils1 p {
+.section-two-skils p {
   font-size: 1.2vw;
   padding: 5px;
+}
+.section-two-skils .talk1 {
+  width: 20vw;
+  height: 5vw;
+  position: absolute;
+  right: 8%;
+  top: 25%;
+  background-color: #f97338;
+  border-radius: 0.4em;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+}
+.section-two-skils .talk1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #f97338;
+  border-left: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.section-two-skils .talk2 {
+  width: 19vw;
+  height: 5vw;
+  position: absolute;
+  right: 5%;
+  top: 65%;
+  background-color: #5381d6;
+  border-radius: 0.4em;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+}
+.section-two-skils .talk2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right-color: #5381d6;
+  border-left: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.section-three {
+  width: 100%;
+  height: auto;
+  padding-top: var(--font-section-padding);
+}
+.section-three-show {
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: center;
+}
+.section-four {
+  width: 100%;
+  height: auto;
+  padding-top: var(--font-section-padding);
 }
