@@ -18,16 +18,17 @@
     <div class="wrap" id="wrap">
 
         <img id="open-menu" src="https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Menu-256.png" alt="">
+        <div id="open-menu-box"></div>
 
         <header>
             <div id="overlay">
                 <nav>
                     <ul id="overlay-min">
                         <li><a href="#none">CLOSE</a></li>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SKILS</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#slider">HOME</a></li>
+                        <li><a href="#section-one-show1">ABOUT</a></li>
+                        <li><a href="#section-two">SKILS</a></li>
+                        <li><a href="#section-three">PORTFOLIO</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -42,7 +43,7 @@
                     <h1>안녕하세요, 신입 웹 퍼블리셔 김민중입니다!</h1>
                     <h1>저의 포트폴리오 사이트에 방문해주셔서 감사합니다.</h1>
                 </div>
-                <div class="section-one-show1">
+                <div class="section-one-show1" id="section-one-show1">
                     <h1>#1 ABOUT</h1>
                 </div>
                 <div class="section-one-show2">
@@ -65,11 +66,11 @@
                                 <p>cq1770@naver.com</p>
                             </div>
                             <div>
-                                <img src="img/KakaoTalk_20220121_234401716.jpg" alt="">
+                                <img src="img/KakaoTalk_20220121_234401716-removebg-preview.png" alt="">
                             </div>
                         </div>
                         <div class="section-one-about-2-history">
-                            <p>2018. 08. 16. ~ 2021. 02. 26. <br>법률사무소 인율 재직</p>
+                            <p>2018. 08. 16. ~ 2021. 02. 26. <br>법률사무소 인율 근무</p>
                             <p>2021. 09. 27. ~ 2022. 02. 22. <br>라인컴퓨터아트학원 반응형 UI/UX 웹퍼블리셔 디자인 과정 수료</p>
                         </div>
                         <div class="section-one-about-2-license">
@@ -77,10 +78,14 @@
                             <p>2022. 01. 웹디자인기능사 필기 합격</p>
                         </div>
                     </div>
+
+                    <img id="deco1" src="img/image-from-rawpixel-id-4062956-jpeg-removebg-preview.png" alt="">
+                    <img id="deco2" src="img/image-from-rawpixel-id-4062959-jpeg-removebg-preview.png" alt="">
+                    <img id="deco3" src="img/image-from-rawpixel-id-4094227-jpeg-removebg-preview.png" alt="">
                 </div>
             </div>
 
-            <div class="section-two">
+            <div class="section-two" id="section-two">
                 <div class="section-two-show1">
                     <h1>#2 SKILS</h1>
                 </div>
@@ -92,25 +97,95 @@
 
                 <div class="section-two-skils">
                     <canvas id="canvas1" width="700" height="700"></canvas>
-
                     <div class="talk1">
                         html의 기본 구조를 이해하며 다양한 컨텐츠를 태그를 사용하여 제작할 수 있습니다.
                     </div>
-
                     <div class="talk2">
                         css로 동적인 스타일과 <br>반응형 레이아웃을 구현할 수 있습니다.
+                    </div>
+                    <div class="talk3">
+                        자바스크립트와 제이쿼리로 슬라이더 제작이 가능합니다.
+                    </div>
+                    <div class="talk4">
+                        간단한 누끼 작업 가능합니다.
+                    </div>
+                    <div class="talk5">
+                        간단한 펜툴 작업 가능합니다.
                     </div>
                 </div>
             </div>
 
-            <div class="section-three">
+            <div class="section-three" id="section-three">
                 <div class="section-three-show">
-                    <h1>그 외 제 작업물들을 보여드릴게요!</h1>
+                    <h1>#3 PORTFOLIO</h1>
+                </div>
+
+                <div class="section-three-grid">
+                    <div class="section-three-grid-item">
+                        <div class="section-three-grid-item-details">
+                            아이패드 UI 형식 웹사이트
+                        </div>
+                    </div> <!--1-->
+                    <div class="section-three-grid-item section-three-grid-item--large">
+                        <div class="section-three-grid-item-details">
+                            모노노케 히메 웹사이트
+                        </div>
+                    </div> <!--2-->
+                    <div class="section-three-grid-item section-three-grid-item--medium">
+                        <div class="section-three-grid-item-details">
+                            The Weeknd 더 위켄드 웹사이트
+                        </div>
+                    </div> <!--3-->
+                    <div class="section-three-grid-item section-three-grid-item--large">
+                        <div class="section-three-grid-item-details">
+                            Marcello Barenghi 마르첼로 바렌기 웹사이트
+                        </div>
+                    </div> <!--4-->
+                    <div class="section-three-grid-item section-three-grid-item--full">
+                        <div class="section-three-grid-item-details">
+                            마이네임 웹사이트
+                        </div>
+                    </div> <!--5-->
+                    <div class="section-three-grid-item section-three-grid-item--medium">
+                        <div class="section-three-grid-item-details">
+                            Machine Gun Kelly 머신 건 켈리 웹사이트
+                        </div>
+                    </div> <!--6-->
+                    <div class="section-three-grid-item section-three-grid-item--large">
+                        <div class="section-three-grid-item-details">
+                            밀리의 서재 웹사이트
+                        </div>
+                    </div> <!--7-->
+                    <div class="section-three-grid-item">
+                        <div class="section-three-grid-item-details">
+                            VAMIR 바미르 웹사이트
+                        </div>
+                    </div> <!--8-->
                 </div>
             </div>
 
             <div class="section-four">
-                
+                <div class="section-four-show1">
+                    <h1>그 외 제 디자인 작업물들도 보여드릴게요! 👋</h1>
+                </div>
+
+                <div class="section-four-image">
+                    <img src="img/design-bg-1.png" alt="" onclick="window.open('image==1.html')">
+                    <img src="img/bg.png" alt="" onclick="window.open('image==2.html')">
+                    <img src="img/contact.png" alt="" onclick="window.open('image==3.html')">
+                    <img src="img/works-bg1.png" alt="">
+                    <img src="img/works-bg2.png" alt="">
+                    <img src="img/menu.png" alt="">
+                    <img src="img/KakaoTalk_Photo_2022-02-04-10-56-00-002.jpeg" alt="">
+                    <img src="img/KakaoTalk_Photo_2022-02-04-10-56-00-004.jpeg" alt="">
+                    <img src="img/KakaoTalk_Photo_2022-02-04-10-56-00-005.jpeg" alt="">
+                    <h1>#3d blender</h1>
+                    <h1>#photoshop</h1>
+                </div>
+            </div>
+
+            <div class="section-five">
+
             </div>
         </div>
     </div>
