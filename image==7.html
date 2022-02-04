@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image==7</title>
+
+    <style>
+        html, body{margin:0; padding:0; overflow: hidden;}
+        .box-image{
+            width: 100vw; height: 100vh;
+            background-image: url(img/KakaoTalk_Photo_2022-02-04-10-56-00-002.jpeg);
+            background-size: cover;
+            position: absolute; z-index:-1;
+            background-repeat: no-repeat;
+        }
+        .box{
+            width: 100vw; height: 100vh;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            display: flex; justify-content: center; align-items: center;
+        }
+        img{
+            width: 30vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-image"></div>
+    <div class="box">
+        <img src="img/KakaoTalk_Photo_2022-02-04-10-56-00-002.jpeg" alt="">
+    </div>
+</body>
+</html>
